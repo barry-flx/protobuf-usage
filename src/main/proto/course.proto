@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.flx.protobuf.dto";
+option java_outer_classname = "CourseProto";
+
+message course {
+  string order_no = 1;
+  uint32 score = 2;
+  bytes model {
+
+  }
+}

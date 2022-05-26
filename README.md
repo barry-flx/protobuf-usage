@@ -1,2 +1,1 @@
-# protobuf-usage
-protobuf-usage
+https://github.com/protocolbuffers/protobuf
