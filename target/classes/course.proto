@@ -4,7 +4,11 @@ option java_multiple_files = true;
 option java_package = "com.flx.protobuf.dto";
 option java_outer_classname = "CourseProto";
 
-message course {
-  string name = 1;
-  uint64 score = 2;
+message Course {
+  string order_no = 1;
+  uint32 score = 2;
+  message Model {
+    uint64 amt_qty = 3;
+    uint64 amt_amt = 4;
+  }
 }
