@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+// proto文件包名
+// package com.flx.protobuf.dto;
+
+option java_package = "com.flx.protobuf.dto";
+option java_outer_classname = "DataTypeProto";
+
+// 引入外部的proto
+import "Course.proto";
+
+message DataType {
+  int32 id = 1;
+  int64 parent_id = 2;
+  string name = 3;
+
+  repeated string strList = 4;
+
+  map<string, string> map = 5;
+
+  map<string, MapValueObject> mapObject = 6;
+
+  // 对象
+  Course course = 7;
+
+  repeated Course courseList = 8;
+
+}
+
+message MapValueObject {
+  int32 id = 1;
+  string name = 2;
+}
