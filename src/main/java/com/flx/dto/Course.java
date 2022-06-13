@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Course {
 
-  private String order_no;
+    private String order_no;
 
-  private int score;
+    private int score;
 
-  private Model model;
+    private Model model;
 
 }

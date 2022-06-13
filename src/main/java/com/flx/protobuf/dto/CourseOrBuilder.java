@@ -7,21 +7,25 @@ public interface CourseOrBuilder extends
     // @@protoc_insertion_point(interface_extends:Course)
     com.google.protobuf.MessageOrBuilder {
 
-  /**
-   * <code>string order_no = 1;</code>
-   * @return The orderNo.
-   */
-  java.lang.String getOrderNo();
-  /**
-   * <code>string order_no = 1;</code>
-   * @return The bytes for orderNo.
-   */
-  com.google.protobuf.ByteString
-      getOrderNoBytes();
+    /**
+     * <code>string order_no = 1;</code>
+     *
+     * @return The orderNo.
+     */
+    java.lang.String getOrderNo();
 
-  /**
-   * <code>uint32 score = 2;</code>
-   * @return The score.
-   */
-  int getScore();
+    /**
+     * <code>string order_no = 1;</code>
+     *
+     * @return The bytes for orderNo.
+     */
+    com.google.protobuf.ByteString
+    getOrderNoBytes();
+
+    /**
+     * <code>uint32 score = 2;</code>
+     *
+     * @return The score.
+     */
+    int getScore();
 }

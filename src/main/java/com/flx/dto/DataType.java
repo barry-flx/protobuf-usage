@@ -13,20 +13,20 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DataType {
 
-  private int id;
+    private int id;
 
-  private long parent_id;
+    private long parent_id;
 
-  private String name;
+    private String name;
 
-  private List<String> strList;
+    private List<String> strList;
 
-  private Map<String, String> map;
+    private Map<String, String> map;
 
-  private Map<String, MapValueObject> mapObject;
+    private Map<String, MapValueObject> mapObject;
 
-  private Course course;
+    private Course course;
 
-  private List<Course> courseList;
+    private List<Course> courseList;
 
 }

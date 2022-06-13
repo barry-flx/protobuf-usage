@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Model {
 
-  private long amt_qty;
+    private long amt_qty;
 
-  private long amt_amt;
+    private long amt_amt;
 }
