@@ -23,9 +23,5 @@ public class TestFloat {
         num = num | (bytes[2] & 0xff) << 8;
         num = num | (bytes[3] & 0xff) << 0;
         System.out.println("num: " + num);
-
-
     }
-
-
 }
