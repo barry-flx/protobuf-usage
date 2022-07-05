@@ -80,6 +80,18 @@
       <version>5.3.2</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.apache.pdfbox</groupId>
+          <artifactId>pdfbox-app</artifactId>
+          <version>2.0.8</version>
+          <scope>test</scope>
+      </dependency>
+    <dependency>
+      <groupId>com.madgag.spongycastle</groupId>
+      <artifactId>core</artifactId>
+      <version>1.51.0.0</version>
+      <scope>test</scope>
+    </dependency>
 
   </dependencies>
   <build>

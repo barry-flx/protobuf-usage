@@ -3,10 +3,22 @@ package com.flx.endian;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import javax.xml.bind.DatatypeConverter;
+import org.bouncycastle.util.encoders.Hex;
+import org.junit.Test;
 
 public class TestEndian {
 
-    public static void main(String[] args) {
+    @Test
+    public void testUnsigned() {
+        String value = "ffffffffffffffff";
+        long d = Long.parseUnsignedLong(value, 16);
+        System.out.println(d);
+        byte[] bytes = long2Bytes(d, ByteOrder.LITTLE_ENDIAN);
+        System.out.println(Hex.toHexString(bytes));
+    }
+
+    @Test
+    public void testByteBuffer() {
         long d = 0x0000000000000001;
         byte[] v = long2Bytes(d, ByteOrder.LITTLE_ENDIAN);
         System.out.println(DatatypeConverter.printHexBinary(v));
