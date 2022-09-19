@@ -1,6 +1,6 @@
 package com.flx.singleton;
 
-public class SingletonTest {
+public class TestSingleton {
 
     /**
      * 基础的饱汉模式（不推荐） 饱汉模式的核心就是懒加载。优点是节省资源，一直到实例被第一次访问，才需要初始化单例 缺点是是线程不安全，if 语句存在竞态条件

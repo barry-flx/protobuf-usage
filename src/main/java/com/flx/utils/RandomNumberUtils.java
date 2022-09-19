@@ -1,6 +1,5 @@
 package com.flx.utils;
 
-import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Random;
 
@@ -12,8 +11,8 @@ public class RandomNumberUtils {
         throw new IllegalStateException("Utility class");
     }
 
-    public static String getRandomString(int length) throws NoSuchAlgorithmException {
-        Random random = SecureRandom.getInstanceStrong();
+    public static String getRandomString(int length) {
+        Random random = new SecureRandom();
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < length; i++) {
             int number = random.nextInt(BASE_STR.length());

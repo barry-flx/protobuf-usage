@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 
-public class ForkJoinPoolTest {
+public class TestForkJoinPool {
 
     /**
      * 多计算量多层循环分治编程

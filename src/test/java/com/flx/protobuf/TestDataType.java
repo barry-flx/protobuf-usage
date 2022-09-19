@@ -14,7 +14,7 @@ import java.util.Arrays;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 
-public class DataTypeTest {
+public class TestDataType {
 
     @Test
     public void testDataType() throws InvalidProtocolBufferException {

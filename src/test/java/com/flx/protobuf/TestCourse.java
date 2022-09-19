@@ -4,7 +4,7 @@ import com.flx.protobuf.dto.Course;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class CourseTest {
+public class TestCourse {
 
     @Test
     public void testCourse() {
