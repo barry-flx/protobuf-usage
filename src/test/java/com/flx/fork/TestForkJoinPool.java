@@ -2,10 +2,20 @@ package com.flx.fork;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 
 public class TestForkJoinPool {
+
+    @Test
+    public void testParallelOut() {
+        List<Integer> numberList = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        numberList.parallelStream().forEach(num -> {
+            System.out.println(Thread.currentThread().getName() + ":::" + num);
+        });
+    }
 
     /**
      * 多计算量多层循环分治编程

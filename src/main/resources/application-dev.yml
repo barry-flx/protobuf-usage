@@ -1,0 +1,13 @@
+server:
+  port: 8081
+  tomcat:
+    accept-count: 200
+    max-connections: 2000
+    threads:
+      max: 160
+      min-spare: 20
+
+
+debug: false
+logging:
+  config: classpath:logback.xml
