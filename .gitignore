@@ -1,3 +1,5 @@
+/target/
+
 # Compiled class file
 *.class
 
@@ -28,8 +30,11 @@ hs_err_pid*
 .vscode
 .*.swp
 
-# WebStorm
+# Idea
 .idea/
+*.iws
+*.iml
+*.ipr
 
 # Build results
 [Dd]ebug/
@@ -49,3 +54,11 @@ bld/
 **/*.idea
 **/*.iml
 **/*out
+
+# target
+*/target/
+*/logs/
+*/logs/*
+logs
+http.log*
+*/http.log*
