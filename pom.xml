@@ -136,6 +136,13 @@
             <version>0.7.10</version>
             <scope>test</scope>
         </dependency>
+        <!-- ganymed -->
+        <dependency>
+            <groupId>ch.ethz.ganymed</groupId>
+            <artifactId>ganymed-ssh2</artifactId>
+            <version>build210</version>
+            <!--<version>262</version>-->
+        </dependency>
 
         <!-- bouncycastle -->
         <dependency>
