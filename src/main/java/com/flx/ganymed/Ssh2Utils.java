@@ -14,11 +14,18 @@ import java.io.InputStreamReader;
 public class Ssh2Utils {
 
     private static String DEFAULT_CHARSET = "UTF-8";
+    private static int DEFAULT_PORT = 22;
+
+
+    public static Connection openConnection(String host, String username, String password) {
+        return openConnection(host, DEFAULT_PORT, username, password);
+    }
 
     public static Connection openConnection(String host, int port, String username, String password) {
         Connection connection;
         try {
             connection = new Connection(host, port);
+            connection.connect();
             if (connection.authenticateWithPassword(username, password)) {
                 return connection;
             } else {
