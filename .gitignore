@@ -57,6 +57,7 @@ bld/
 
 # target
 */target/
+*/build/
 */logs/
 */logs/*
 logs

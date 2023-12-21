@@ -7,6 +7,14 @@ server:
       max: 160
       min-spare: 20
 
+#spring:
+#  security:
+#    user:
+#      name: admin
+#      password: admin
+
+rocksdb:
+  path: /item
 
 debug: false
 logging:
