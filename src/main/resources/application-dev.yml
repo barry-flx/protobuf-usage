@@ -6,6 +6,8 @@ server:
     threads:
       max: 160
       min-spare: 20
+  servlet:
+    context-path: /api
 
 #spring:
 #  security:

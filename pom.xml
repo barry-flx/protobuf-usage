@@ -226,6 +226,13 @@
             <version>0.24.0</version>
         </dependency>
 
+        <!-- retrofit -->
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

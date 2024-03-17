@@ -20,10 +20,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ResourceUtils;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletContext;
 import java.io.ByteArrayOutputStream;
@@ -38,6 +35,7 @@ import java.util.concurrent.*;
 
 @Slf4j
 @RestController
+@RequestMapping("/api")
 public class ApiController {
 
     @Autowired
@@ -50,9 +48,9 @@ public class ApiController {
     private static ThreadPoolExecutor executorMdcWrapper = new ThreadPoolExecutorMdcWrapper(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue<>());
     private static ScheduledThreadPoolExecutor taskMdcWrapper = new ScheduledThreadPoolExecutorMdcWrapper(12, new BasicThreadFactory.Builder().namingPattern("task--%d").daemon(true).build());
 
-    @GetMapping("/get")
-    public String get() {
-        log.info("success.");
+    @GetMapping("get")
+    public String get(@RequestParam Integer limit) {
+        log.info("success, limit:{}", limit);
         return "200";
     }
 
